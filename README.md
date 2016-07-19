@@ -19,7 +19,7 @@ Everything that Scotch Box contains (PHP, MySQL, Git, etc.), with the following 
 
     cd /var/www
     composer self-update
-    composer create-project symfony/framework-standard-edition symfony-box "2.8.*"
+    composer create-project symfony/framework-standard-edition symfony-box "2.*"
     mv symfony-box/* .
     mv symfony-box/.gitignore .
     rm -rf symfony-box
@@ -28,6 +28,10 @@ Everything that Scotch Box contains (PHP, MySQL, Git, etc.), with the following 
     sudo sed -i s,/var/www/public,/var/www/web,g /etc/apache2/sites-available/000-default.conf
     sudo sed -i s,/var/www/public,/var/www/web,g /etc/apache2/sites-available/scotchbox.local.conf
     sudo service apache2 restart
+
+# Contributions
+
+Fork it, improve it, send a PR!
 
 # Credits
 
