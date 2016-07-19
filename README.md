@@ -2,6 +2,23 @@
 
 A ready LAMP environment with [Symfony2](https://symfony.com) installed, based on [Scotch Box](https://github.com/scotch-io/scotch-box).
 
+Symfony Box...
+
+- Sets up a basic LAMP stack
+- Updates Composer
+- Installs Symfony Standard Edition
+- Initializes a git repo
+
+# Requirements
+
+This should run just fine on any system supported by VirtualBox and Vagrant, including Linux, macOS and Windows.
+
+# Prerequisites
+
+- VirtualBox
+- Vagrant
+- An idea for an app
+
 # Usage
 
 Recommended:
