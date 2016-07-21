@@ -11,7 +11,8 @@ Symfony Box...
 
 # Requirements
 
-This should run just fine on any system supported by VirtualBox and Vagrant, including Linux, macOS and Windows.
+This should run just fine on any system supported by VirtualBox and Vagrant, including Linux,
+macOS and Windows.
 
 # Prerequisites
 
@@ -26,13 +27,16 @@ Recommended:
 1. Create a directory for your new project (eg. `~/Documents/my-symfony-project`)
 2. Download `Vagrantfile` and place it in that directory.
 3. Run `vagrant up`.
-4. Open your web browser to https://192.168.22.22. You may also set a hostname for this IP for easier access.
+4. Open your web browser to https://192.168.22.22. You may also set a hostname for this IP
+5. for easier access.
 
-Like the original Scotch Box, you can also clone this repo and run the command, but I find the file method more portable.
+Like the original Scotch Box, you can also clone this repo and run the command, but I find
+the file method more portable.
 
 # What's inside the box?
 
-Everything that Scotch Box contains (PHP, MySQL, Git, etc.), with the following provisioning commands to install and set up Symfony the right way:
+Everything that Scotch Box contains (PHP, MySQL, Git, etc.), with the following provisioning
+commands to install and set up Symfony the right way:
 
     cd /var/www
     composer self-update
@@ -45,6 +49,13 @@ Everything that Scotch Box contains (PHP, MySQL, Git, etc.), with the following 
     sudo sed -i s,/var/www/public,/var/www/web,g /etc/apache2/sites-available/000-default.conf
     sudo sed -i s,/var/www/public,/var/www/web,g /etc/apache2/sites-available/scotchbox.local.conf
     sudo service apache2 restart
+
+# A box for anything
+
+The crux of this box is the Composer command used to install the Symfony Standard Edition.
+You can easily edit `Vagrantfile` to change the version to 3.x or to change it to the core
+Symfony framework (`symfony/symfony`), a different framework (`laravel/laravel`) or something
+else entirely (`guzzlehttp/guzzle` or `phpunit/phpunit`).
 
 # Contributions
 
