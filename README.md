@@ -27,7 +27,7 @@ Recommended:
 1. Create a directory for your new project (eg. `~/Documents/my-symfony-project`)
 2. Download `Vagrantfile` and place it in that directory.
 3. Run `vagrant up`.
-4. Open your web browser to https://192.168.22.22. You may also set a hostname for this IP
+4. Open your web browser to http://192.168.22.22. You may also set a hostname for this IP
 5. for easier access.
 
 Like the original Scotch Box, you can also clone this repo and run the command, but I find
